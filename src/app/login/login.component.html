@@ -1,0 +1,17 @@
+<div class="login-form">
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+  <input
+    type="text"
+    placeholder="Username"
+    [(ngModel)]="username"
+    (keydown.enter)="login()"
+  />
+  <input
+    type="password"
+    placeholder="Passwort"
+    [(ngModel)]="password"
+    (keydown.enter)="login()"
+  />
+  <button (click)="login()">Login</button>
+</div>

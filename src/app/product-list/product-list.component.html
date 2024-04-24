@@ -1,0 +1,26 @@
+<div class="product-container">
+  <h2>Top-Neuerscheinungen – die meisten auch als E-Book erhältlich</h2>
+  <div class="liste">
+    <ul class="product-list">
+      <li class="product-item" *ngFor="let product of products">
+        <img [src]="product.imageUrl" alt="{{ product.title }}" />
+        <div class="product-details">
+          <h3>{{ product.title }}</h3>
+          <p>{{ product.description }}</p>
+          <p>
+            <strong>Veröffentlichung:</strong> {{ product.publicationDate }}
+          </p>
+          <p>
+            <strong>Preis inkl. MwSt.:</strong>
+            {{ product.priceWithVat | currency : "EUR" }}
+          </p>
+          <p>
+            <strong>Preis exkl. MwSt.:</strong>
+            {{ product.priceWithoutVat | currency : "EUR" }}
+          </p>
+        </div>
+        <button>In den Warenkorb</button>
+      </li>
+    </ul>
+  </div>
+</div>

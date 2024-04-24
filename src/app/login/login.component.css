@@ -1,0 +1,26 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Position relativ für Fehlermeldung */
+}
+
+input {
+  width: 15vw;
+  margin-top: 1vh;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.7vw; /* Kleinere Schriftgröße für die Fehlermeldung */
+  position: absolute; /* Position absolut für Fehlermeldung */
+  top: 0; /* Oben ausrichten */
+  height: 1vh; /* Fixe Höhe für Platzhalter */
+}
+
+.error-message.ng-hide {
+  opacity: 0;
+}
+button {
+  margin-top: 1vh;
+}

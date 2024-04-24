@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  height: 95vh;
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center; /* Zentriert den Inhalt horizontal */
+  align-items: flex-start; /* Zentriert den Inhalt vertikal */
+  height: 100%;
+}

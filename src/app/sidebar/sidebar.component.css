@@ -1,0 +1,9 @@
+.sidebar {
+  width: 100%;
+  height: 95vh;
+  padding-right: 1vw;
+}
+ul {
+  margin-top: 0;
+  padding-top: 1vh;
+}
